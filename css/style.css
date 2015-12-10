@@ -5,14 +5,15 @@ box-sizing: border-box;
 
 }
 
-p{
+
+p,h4{
 
 font-size: 16;
 font-weight: 400;
+text-align: center
 
 
 }
-
 
 .navbar .navbar-nav {
     letter-spacing: 1px;
@@ -61,7 +62,6 @@ img#main-logo{
 }
 
 
-
 body {
     padding-top: 150px;
 }
@@ -71,11 +71,20 @@ body {
 
 }
 
-
-
-.portfolio-item {
-    margin-bottom: 25px;
+.glyphicon-remove:before{
+	font-size:50px;
+	color: #ddd ;
 }
+
+.valuation{
+	font-size:1.9em;
+	font-weight: 200;
+
+}
+
+
+
+
  .row{
 
  	margin-left:5%;
@@ -107,7 +116,7 @@ width: 100%;
 
 
 th{
- text-align:right;
+ text-align:center;
 background-color:#bdbdbd;
 min-height: 30px;
 color:#fff;
@@ -115,7 +124,7 @@ color:#fff;
 
 
 td{
-	text-align:right;
+	text-align:center;
 	border: none!important;
 
 
@@ -134,7 +143,16 @@ height:75px;
 background-color:#8CBED6;
 color:#fff;
 line-height: 50px;
+margin-bottom:20px;
 }
+
+
+
+.title{
+}
+
+
+
 
 hr { 
     display: block;
@@ -148,7 +166,7 @@ hr {
 
 h2{
 	font-weight:300;
-	color:grey;
+	color:#ddd;
 }
 
 footer{
@@ -167,6 +185,7 @@ footer{
 
   text-align: center;
 }
+
 .pagination__dot {
   position: relative;
   width: 17px;
@@ -180,11 +199,12 @@ footer{
   transition: .3s;
 }
 .pagination__dot--active {
-  background: ;
+  background-color:#ddd ;
 }
 .pagination__dot:hover {
   -webkit-transition: .3s;
   transition: .3s;
+  color:#ddd;
 }
 .pagination__dot:hover:before {
   top: -48px;
@@ -221,6 +241,14 @@ footer{
   -webkit-transition: .3s;
   transition: .3s;
 }
+footer p{
+font-size:12;
+padding-left:20px;
+padding-right:20px;
 
+}
 
-
+#footer-logo{
+	float:left;
+	padding-bottom: 20px;
+}
