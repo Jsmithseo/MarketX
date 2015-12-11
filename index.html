@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="css/style.css"></link>
 
  <script type="text/babel">
-   var CommentBox = React.createClass({
+   var ListTable = React.createClass({
   render: function() {
     return (
-            <div className="commentBox">
+            <div className="ListTable">
 
 <table>
   <tr>
@@ -55,21 +55,64 @@
   }
 });
 ReactDOM.render(
-  <CommentBox />,
+  <ListTable />,
   document.getElementById('content')
 );  
-
-
     </script>
 
 
 
+<script type="text/babel">
+   var FundingTable = React.createClass({
+  render: function() {
+    return (
+            <div className="FundingTable ">
+                        <table class="table table-striped">
+                            <thead class="thead-inverse">
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Series</th>
+                                    <th>Funding</th>
+                                    <th>Announced On</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Later Stage VC </td>
+                                    <td>K</td>
+                                    <td>554.83M</td>
+                                    <td>23-Jul-2015</td>
+                                  
 
+                                </tr>
+                                <tr>
+                                    <td>Later Stage VC</td>
+                                    <td>J</td>
+                                    <td>400.00M</td>
+                                    <td>26-Nov-2014</td>
+                                    
 
+                                </tr>
+                                <tr>
+                                    <td>Later Stage VC</td>
+                                    <td>I</td>
+                                    <td>635.71M</td>
+                                    <td>03-Nov-2014</td>    
 
+                                </tr>         
 
-
-
+                            </tbody>
+ 
+                        </table>
+      </div>
+    );
+  }
+});
+ReactDOM.render(
+  <FundingTable  />,
+  document.getElementById('Funding_table')
+);  
+    </script>
 </head>
 
 <body>
@@ -232,19 +275,20 @@ ReactDOM.render(
     <p>Palo Alto, California</p>
     </div>
     <div class="col-xs-2">
-    <p>Growth Ratio</p>
+    <p><b>Growth Ratio</b></p>
     <p>0.62%</p>
     <p>85th %tile</p>
 </div>
 
 <div class="col-xs-2">
-</p>Size Multiple</p>
+</p><b>Size Multiple</b></p>
     <p>63.8%</p>
 <p>96th %tile</p>
 </div>
 <div class="col-xs-2">
-    <p>Website</p>
+    <p><b>Website</b></p>
     <p>Palantic.com</p>
+    <p></p>
 
 
 </div>
@@ -284,51 +328,16 @@ ReactDOM.render(
             </div>
             </div>
     <hr>
-
 <div class="row">
+
+    <div id="Funding_table">
+</div>
+</div>
+
+
+<!-- <div class="row">
  <div class="col-lg-12 col-md-8">
-                    <div class="table-responsive">
-                        <table class="table table-striped">
-                            <thead class="thead-inverse">
-                                <tr>
-                                    <th>Title</th>
-                                    <th>Series</th>
-                                    <th>Funding</th>
-                                    <th>Announced On</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Later Stage VC </td>
-                                    <td>K</td>
-                                    <td>554.83M</td>
-                                    <td>23-Jul-2015</td>
-                                  
-
-                                </tr>
-                                <tr>
-                                    <td>Later Stage VC</td>
-                                    <td>J</td>
-                                    <td>400.00M</td>
-                                    <td>26-Nov-2014</td>
-                                    
-
-                                </tr>
-                                <tr>
-                                    <td>Later Stage VC</td>
-                                    <td>I</td>
-                                    <td>635.71M</td>
-                                    <td>03-Nov-2014</td>
-                                   
-
-                                </tr>
-                              
-                               
-                                
-
-                            </tbody>
- 
-                        </table>
+                     -->
                                                    <div class="pagination">
   <div data-tooltip="Tooltip 1" class="pagination__dot pagination__dot--active"></div>
   <div data-tooltip="Tooltip 2" class="pagination__dot"></div>
